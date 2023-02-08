@@ -1,0 +1,27 @@
+body {
+  font: $body;
+  background: $gradient-default;
+  height: 100vh;
+}
+
+h1 {
+  font: $heading-1;
+  color: $white;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  p {
+    max-width: 270px;
+    font: $message;
+    color: $white;
+    opacity: .64;
+    text-align: center;
+  }
+}

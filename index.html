@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Desafio 06 - #boraCodar</title>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/style/css/main.min.css" />
+	</head>
+	<body>
+		<main>
+			<h1>Cartão de embarque</h1>
+			<div class="ticket">
+				<div class="ticket__flight-info mask--b">
+					<div class="ticket__container">
+						<div class="ticket__flight-number">
+							<div>Voo</div>
+							<div><strong>RS995</strong></div>
+						</div>
+						<div class="ticket__flight-date">
+							<div>Data</div>
+							<div><strong>23/05/2023</strong></div>
+						</div>
+					</div>
+					<div class="ticket__container">
+						<div class="ticket__departure">
+							<div>São Paulo, Brasil</div>
+							<div><strong>GRU</strong></div>
+							<div class="ticket__departure ticket__departure--time">17:00</div>
+						</div>
+						<div class="ticket__arrival">
+							<div>São Francisco, EUA</div>
+							<div><strong>SFO</strong></div>
+
+							<div class="ticket__arrival ticket__arrival--time">
+								04:48<span>+1</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ticket__passanger-info mask">
+					<div class="ticket__container">
+						<div class="ticket__passanger-name">
+							<div>Passageiro</div>
+							<div><strong>Rodrigo Terron</strong></div>
+						</div>
+						<div class="ticket__seat">
+							<div>Assento</div>
+							<div><strong>28A</strong></div>
+						</div>
+					</div>
+				</div>
+				<div class="ticket__boarding-info mask--t">
+					<div class="ticket__container">
+						<div class="ticket__boarding-info-inner">
+							<div class="ticket__boarding-time">
+								<div>Embarque</div>
+								<div><strong>16:15</strong></div>
+							</div>
+							<div class="ticket__boarding-terminal">
+								<div>Terminal</div>
+								<div><strong>2</strong></div>
+							</div>
+							<div class="ticket__boarding-gate">
+								<div>Portão</div>
+								<div><strong>15</strong></div>
+							</div>
+						</div>
+						<div class="ticket__qrcode">
+							<img src="./assets/image/qr_code.svg" alt="Código do tipo Qr" />
+							<div>Grupo de embarque: 3</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>
+				Qualquer problema procure o balcão de atendimento da sua companhia aérea
+			</p>
+		</main>
+	</body>
+</html>

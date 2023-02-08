@@ -1,0 +1,162 @@
+.ticket {
+  width: 327px;
+  opacity: 0;
+  transform: scale(2.0);
+  animation: place .4s forwards;
+
+  font: $body-sm;
+  color: $dark-600;
+
+  strong {
+    font: $body-strong;
+    color: $dark-900;
+  }
+
+  &__flight-info,
+  &__passanger-info,
+  &__boarding-info {
+    position: relative;
+    background: $white;
+    border-radius: 24px;
+    padding: 24px 32px;
+  }
+
+
+  @include screen-lg {
+
+    &__passanger-info {
+      border-radius: 0;
+    }
+
+    &__flight-info {
+      border-radius: 24px 24px 0 0;
+    }
+
+    &__boarding-info {
+      border-radius: 0 0 24px 24px;
+    }
+
+  }
+
+  &__passanger-info,
+  &__boarding-info {
+    transform-origin: 50% 0%;
+    animation: unfold .6s forwards;
+    transform: perspective($perspective-distance) rotateX(-90deg);
+  }
+
+  &__passanger-info {
+    animation-delay: .4s;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 85%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: thin;
+    }
+
+    &::after {
+      border-top: 1px dashed $dark-300;
+      top: 0;
+    }
+
+    &::before {
+      border-bottom: 1px dashed $dark-300;
+      bottom: 0;
+    }
+  }
+
+  &__boarding-info {
+    animation-delay: 1s;
+  }
+
+  &__boarding-info-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+
+  &__boarding-time div:has(strong) {
+    margin-top: 4px;
+
+    strong {
+      padding: 4px 8px;
+      background: $purple;
+      color: $white;
+      border-radius: 8px;
+    }
+  }
+
+
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    &:has(.ticket__departure) {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: url('/assets/image/ion_airplane.svg');
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+      }
+    }
+  }
+
+  &__flight-date,
+  &__arrival,
+  &__seat {
+    text-align: end;
+  }
+
+  &__arrival,
+  &__departure {
+    strong {
+      font: $typography-airport;
+    }
+
+    &--time {
+      font-weight: 500;
+      color: $dark-800;
+      position: relative;
+
+      & span {
+        vertical-align: top;
+        font: $body-xs;
+
+      }
+    }
+  }
+
+
+  &__flight-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  @keyframes place {
+    to {
+      opacity: 1;
+      transform: scale(1.0);
+    }
+  }
+
+  @keyframes unfold {
+    to {
+      transform: perspective($perspective-distance) rotateX(0);
+    }
+  }
+
+
+}

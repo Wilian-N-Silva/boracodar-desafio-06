@@ -1,4 +1,4 @@
-<h1 align="center"><b>#boraCodar</b> {nome do desafio} </h1>
+<h1 align="center"><b>#boraCodar</b> um cartão de embarque </h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -21,15 +21,22 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- Tecnologia
+- HTML
+- SASS
 
 ## 💻 Projeto
 
-{Descrição}
+Desenvolva uma tela onde um usuário visualiza um cartão de embarque. Use sua criatividade e fique à vontade para ir além nesse projeto.
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](link). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1205146101173113980). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+
+## ⚙️ Rodando o SASS
+
+```console
+sass --watch ./assets/style/scss/main.scss ./assets/style/css/main.min.css --style compressed
+```
 
 ## 📝 Licença
 

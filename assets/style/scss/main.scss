@@ -1,0 +1,19 @@
+// UTILITIES
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'utilities/colors';
+
+// BASE
+@import 'base/typography';
+@import 'base/reset';
+@import 'base/helpers';
+
+// COMPONENTS
+@import 'components/ticket';
+
+// LAYOUT
+// @import 'layout/navbar';
+// @import 'layout/content';
+
+// PAGES
+@import 'pages/index';

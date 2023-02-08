@@ -1,0 +1,5 @@
+@mixin screen-lg {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
